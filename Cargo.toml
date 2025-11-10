@@ -1,5 +1,5 @@
 [package]
-name = "gitui"
+name = "gnostr"
 version = "0.27.0"
 authors = ["extrawurst <mail@rusticorn.com>"]
 description = "blazing fast terminal-ui for git"
@@ -24,7 +24,7 @@ members = [
 ]
 
 [lib]
-name = "gitui"
+name = "gnostr"
 path = "src/lib/mod.rs"
 
 [features]
@@ -39,7 +39,7 @@ vendor-openssl = ["asyncgit/vendor-openssl"]
 
 [dependencies]
 anyhow = "1.0"
-asyncgit = { path = "./asyncgit", version = "0.27.0", default-features = false }
+asyncgit = { package = "gnostr-asyncgit", path = "./asyncgit", version = "0.27.0", default-features = false }
 backtrace = "0.3"
 base64 = "0.22"
 bitflags = "2.10"

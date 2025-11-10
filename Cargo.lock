@@ -144,35 +144,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
 
 [[package]]
-name = "asyncgit"
-version = "0.27.0"
-dependencies = [
- "bitflags 2.10.0",
- "crossbeam-channel",
- "dirs",
- "easy-cast",
- "env_logger",
- "fuzzy-matcher",
- "git2",
- "git2-hooks",
- "gix",
- "invalidstring",
- "log",
- "openssl-sys",
- "pretty_assertions",
- "rayon",
- "rayon-core",
- "scopetime",
- "serde",
- "serial_test",
- "ssh-key",
- "tempfile",
- "thiserror",
- "unicode-truncate 2.0.0",
- "url",
-]
-
-[[package]]
 name = "autocfg"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1171,55 +1142,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "gitui"
-version = "0.27.0"
-dependencies = [
- "anyhow",
- "asyncgit",
- "backtrace",
- "base64",
- "bitflags 2.10.0",
- "bugreport",
- "bwrap",
- "bytesize",
- "chrono",
- "clap",
- "crossbeam-channel",
- "crossterm",
- "dirs",
- "easy-cast",
- "env_logger",
- "filetreelist",
- "fuzzy-matcher",
- "gh-emoji",
- "indexmap",
- "itertools 0.14.0",
- "log",
- "notify",
- "notify-debouncer-mini",
- "once_cell",
- "parking_lot_core",
- "pretty_assertions",
- "ratatui",
- "rayon-core",
- "ron",
- "scopeguard",
- "scopetime",
- "serde",
- "shellexpand",
- "simplelog",
- "struct-patch",
- "syntect",
- "tempfile",
- "tui-textarea",
- "two-face",
- "unicode-segmentation",
- "unicode-truncate 2.0.0",
- "unicode-width 0.2.0",
- "which",
-]
-
-[[package]]
 name = "gix"
 version = "0.74.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1981,6 +1903,84 @@ dependencies = [
  "gix-object",
  "gix-path",
  "gix-validate",
+]
+
+[[package]]
+name = "gnostr"
+version = "0.27.0"
+dependencies = [
+ "anyhow",
+ "backtrace",
+ "base64",
+ "bitflags 2.10.0",
+ "bugreport",
+ "bwrap",
+ "bytesize",
+ "chrono",
+ "clap",
+ "crossbeam-channel",
+ "crossterm",
+ "dirs",
+ "easy-cast",
+ "env_logger",
+ "filetreelist",
+ "fuzzy-matcher",
+ "gh-emoji",
+ "gnostr-asyncgit",
+ "indexmap",
+ "itertools 0.14.0",
+ "log",
+ "notify",
+ "notify-debouncer-mini",
+ "once_cell",
+ "parking_lot_core",
+ "pretty_assertions",
+ "ratatui",
+ "rayon-core",
+ "ron",
+ "scopeguard",
+ "scopetime",
+ "serde",
+ "shellexpand",
+ "simplelog",
+ "struct-patch",
+ "syntect",
+ "tempfile",
+ "tui-textarea",
+ "two-face",
+ "unicode-segmentation",
+ "unicode-truncate 2.0.0",
+ "unicode-width 0.2.0",
+ "which",
+]
+
+[[package]]
+name = "gnostr-asyncgit"
+version = "0.27.0"
+dependencies = [
+ "bitflags 2.10.0",
+ "crossbeam-channel",
+ "dirs",
+ "easy-cast",
+ "env_logger",
+ "fuzzy-matcher",
+ "git2",
+ "git2-hooks",
+ "gix",
+ "invalidstring",
+ "log",
+ "openssl-sys",
+ "pretty_assertions",
+ "rayon",
+ "rayon-core",
+ "scopetime",
+ "serde",
+ "serial_test",
+ "ssh-key",
+ "tempfile",
+ "thiserror",
+ "unicode-truncate 2.0.0",
+ "url",
 ]
 
 [[package]]
