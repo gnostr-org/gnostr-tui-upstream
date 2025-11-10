@@ -14,10 +14,6 @@ categories = ["command-line-utilities"]
 keywords = ["git", "gui", "cli", "terminal", "ui"]
 build = "build.rs"
 
-[lib]
-name = "gitui"
-path = "src/lib/mod.rs"
-
 [workspace]
 members = [
     "asyncgit",
@@ -26,6 +22,10 @@ members = [
     "git2-testing",
     "scopetime",
 ]
+
+[lib]
+name = "gitui"
+path = "src/lib/mod.rs"
 
 [features]
 default = ["ghemoji", "regex-fancy", "trace-libgit", "vendor-openssl"]
